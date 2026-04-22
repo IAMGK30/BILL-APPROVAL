@@ -13,8 +13,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin:['http://localhost:3000',
-  "https://bill-approval-qzed7m2xw-iamgk30s-projects.vercel.app"],
+  origin:true,
   credentials: true,
 }));
 app.use(express.json());
